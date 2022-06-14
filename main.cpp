@@ -46,3 +46,30 @@ void array::proses(){
         }
       }
   }
+
+void array::output(){
+    cout << endl;
+    //bilangan setelah diurutkan
+    cout << "==============================================================\n";
+    cout << "Bilangan setelah diurutkan : \n";
+      for (int d=0; d<20; d++){
+        cout << data[d] << " ";
+      }
+    //menampilkan array 2 dimensi
+    cout << endl;
+    cout << "Bilangan setelah di konversi menjadi 2 dimensi: \n";
+    for (int k=0;k<4;k++){
+      for (int l=0;l<5;l++){
+        cout << matriks[k][l] << "   ";
+      }
+      cout << endl;
+    }
+  }
+
+int main(){
+  array x;
+  x.input();
+  x.proses();
+  x.output();
+  return 0;
+}
